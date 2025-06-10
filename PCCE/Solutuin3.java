@@ -1,3 +1,5 @@
+package PCCE;
+
 import java.util.Scanner;
 
 public class Solutuin3 {
