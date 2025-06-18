@@ -22,9 +22,16 @@ public class programmers1 {
             }
 
             // 값이 1인 사람 (완주 못한 사람)
-            for (String key : map.keySet()) {
-                if (map.get(key) > 0) {
-                    answer= key;
+//            for (String key : map.keySet()) {
+//                if (map.get(key) > 0) {
+//                    answer= key;
+//                }
+//            }
+
+            // 값이 1인 사람 (완주 못한 사람) 권장 방법
+            for (Map.Entry<String, Integer> entry : map.entrySet()) {
+                if (entry.getValue() > 0) {
+                    return entry.getKey();
                 }
             }
             return answer;
